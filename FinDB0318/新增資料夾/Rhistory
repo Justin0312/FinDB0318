@@ -1,0 +1,18 @@
+knitr::opts_chunk$set(echo = TRUE)
+rm(list=ls())
+etf4<-read.table("ETF4_2000_2018_d.txt")
+rm(list=ls())
+etf4<-read.table("ETF4_2000_2018_d.txt")
+rm(list=ls())
+etf4<-read.table("ETF4_2000_2018_d.txt")
+rm(list=ls())
+etf4<-read.table("ETF4_2000_2018_d.txt", fileEncoding = "UTF-8-BOM")
+etf4<-read.table("ETF4_2000_2018_d_ansi.txt", header = T)
+tail(etf4,10)
+rm(list=ls())
+etf4<-read.table("ETF4_2000_2018_d.txt", header = T, fileEncoding = "UTF-8-BOM")
+etf4
+tail(etf4,10)
+etf4.csv<-read.csv("ETF4_2000_2018_d.csv", fileEncoding='big5',
+colClasses=c("證券代碼"="character",'id', 'date', 'price'))
+head(etf4)
